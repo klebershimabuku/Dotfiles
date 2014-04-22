@@ -39,6 +39,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"save pressing Esc twice
+map <Esc><Esc> :w<CR>
+
 " Delete trailing white space on save
 func! DeleteTrailingWS()
   exe "normal mz"
