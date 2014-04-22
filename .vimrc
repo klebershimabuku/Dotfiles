@@ -24,6 +24,9 @@ set autoindent
 set nobackup
 set number      "show line number
 
+"for the same appearance as your line number column
+highlight clear SignColumn
+
 if v:version >= 703
     "undo settings
     set undodir=~/.vim/undofiles
