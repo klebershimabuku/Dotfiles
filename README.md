@@ -22,6 +22,8 @@ ln -s ~/Dotfiles/.vim ~/.vim
 ln -s ~/Dotfiles/.vimrc ~/.vimrc
 ```
 
+Perhaps you already have a `.vim` directory, so, when you try to create a symbolic link to `.vim` it will fail. In this case, just remove it (`rm -rf .vim/`) and try to symlink again.
+
 ## Others
 
 TODO someday
