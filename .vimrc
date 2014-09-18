@@ -39,6 +39,7 @@ set autoindent
 set nobackup
 set number      "show line number
 set cursorline  "highlight current line
+set directory=$HOME/.vim/tmp/
 
 "for the same appearance as your line number column
 highlight clear SignColumn
