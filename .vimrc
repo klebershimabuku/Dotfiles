@@ -17,6 +17,14 @@ Plugin 'fatih/vim-go'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'godlygeek/tabular.git'
 Plugin 'pangloss/vim-javascript'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'vim-scripts/paredit.vim'
+
+"let vimrubocop_config='~/.vim/config/rubocop.yml'
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -25,8 +33,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-"colorscheme wombat
-colorscheme Tomorrow-Night-Bright
+colorscheme lucius
+LuciusDarkLowContrast
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
