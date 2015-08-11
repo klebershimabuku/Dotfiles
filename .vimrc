@@ -20,7 +20,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
-Plugin 'vim-scripts/paredit.vim'
 
 "let vimrubocop_config='~/.vim/config/rubocop.yml'
 let g:vimrubocop_keymap = 0
