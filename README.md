@@ -7,7 +7,7 @@ This is [Roger Leite](https://github.com/rogerleite)'s dot f*** files fork for M
 First of all you need to clone the repo
 ```sh
 cd ~
-git clone https://github.com/klebershimabuku/Dotfiles.git
+git clone https://github.com/GabrielMalakias/Dotfiles.git
 ```
 
 Than the the submodules
