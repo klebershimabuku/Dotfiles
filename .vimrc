@@ -135,3 +135,9 @@ map <leader>T :call RunNearestTest()<cr>
 
 let g:gitgutter_max_signs = 950
 let g:javascript_enable_domhtmlcss = 1
+
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+nnoremap <S-Up> :m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
+
