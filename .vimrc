@@ -17,6 +17,7 @@ Plugin 'fatih/vim-go'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'godlygeek/tabular.git'
 Plugin 'pangloss/vim-javascript'
+Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -24,9 +25,6 @@ call vundle#end()            " required
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-
-"colorscheme wombat
-colorscheme Tomorrow-Night-Bright
 
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
@@ -126,5 +124,5 @@ endfunction
 map <leader>t :call RunTestFile()<cr>
 map <leader>T :call RunNearestTest()<cr>
 
-let g:gitgutter_max_signs = 950
+let g:gitgutter_max_signs = 2000
 let g:javascript_enable_domhtmlcss = 1
