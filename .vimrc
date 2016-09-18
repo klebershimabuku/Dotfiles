@@ -41,6 +41,7 @@ set autoindent
 set nobackup
 set number      "show line number
 set cursorline  "highlight current line
+set noswapfile
 
 "for the same appearance as your line number column
 highlight clear SignColumn
