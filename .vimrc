@@ -26,6 +26,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" auto-reload vimrc on change
+au BufWritePre * :%s/\s\+$//e
+au BufWritePost .vimrc so $MYVIMRC
+
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
 set incsearch   "find the next match as we type the search
