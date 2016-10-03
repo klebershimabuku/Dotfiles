@@ -30,6 +30,10 @@ filetype plugin indent on
 au BufWritePre * :%s/\s\+$//e
 au BufWritePost .vimrc so $MYVIMRC
 
+" Make those debugger statements painfully obvious
+au BufEnter *.rb syn match error contained "\<binding.pry\>"
+au BufEnter *.rb syn match error contained "\<debugger\>"
+
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
 set incsearch   "find the next match as we type the search
