@@ -11,13 +11,13 @@ call vundle#begin()
 " " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
+"Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'fatih/vim-go'
-Plugin 'derekwyatt/vim-scala'
+"Plugin 'fatih/vim-go'
+"Plugin 'derekwyatt/vim-scala'
 Plugin 'godlygeek/tabular.git'
 Plugin 'pangloss/vim-javascript'
-Plugin 'elixir-lang/vim-elixir'
+"Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -135,3 +135,17 @@ map <leader>T :call RunNearestTest()<cr>
 
 let g:gitgutter_max_signs = 2000
 let g:javascript_enable_domhtmlcss = 1
+
+" Run a given vim command on the results of alt from a given path.
+" See usage below.
+function! AltCommand(path, vim_command)
+  let l:alternate = system("alt " . a:path)
+  if empty(l:alternate)
+    echo "No alternate file for " . a:path . " exists!"
+  else
+    exec a:vim_command . " " . l:alternate
+  endif
+endfunction
+
+" Find the alternate file for the current path and open it
+nnoremap <leader>. :w<cr>:call AltCommand(expand('%'), ':e')<cr>
